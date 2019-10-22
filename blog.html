@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Added a gray background color with some padding */
+        body {
+            font-family: Arial;
+            padding: 20px;
+            background-image: linear-gradient(#E5E5E5 0%, #25CBC5 68%, #1C6EA4 100%);
+        }
+
+        /* Header/Blog Title */
+        .header {
+            padding: 25px;
+            font-size: 40px;
+            text-align: center;
+            background: #1C6EA4;
+            background: -moz-linear-gradient(top, #1C6EA4 0%, #25CBC5 68%, #E5E5E5 100%);
+            background: -webkit-linear-gradient(top, #1C6EA4 0%, #25CBC5 68%, #E5E5E5 100%);
+            background: linear-gradient(to bottom, #1C6EA4 0%, #25CBC5 68%, #E5E5E5 100%);
+            font-family: 'Rubik', sans-serif;
+
+
+        }
+        .underHeader{
+            font-size: 20px;
+        }
+
+        /* two unequal columns that float next to each other */
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
+
+        /* Fake tavel image */
+        .fakeimg {
+            background-color: transparent;
+            width: 100%;
+            padding: 10px;
+        }
+
+
+
+        /* Added a card effect for stuff */
+        .card {
+            background : rgba(255, 255, 255, 0.623);
+            padding: 20px;
+            margin-top: 20px;
+
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.87);
+        }
+
+        .container {
+            padding: 2px 16px;
+            text-align: center;
+            font-size: 13pt;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /*Adding button for social media with abunch of cool stuff */
+        .myButton {
+            color: rgb(255, 255, 255);
+            font-size: 14px;
+            line-height: 14px;
+            padding: 7px;
+            border-radius: 12px;
+            font-family: Georgia, serif;
+            font-weight: normal;
+            text-decoration: none;
+            font-style: normal;
+            font-variant: normal;
+            text-transform: none;
+            background-image: linear-gradient(rgb(0, 0, 0) 0%, rgb(29, 105, 203) 68%, rgb(145, 229, 212) 100%);
+            box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
+            border: 2px solid rgb(28, 110, 164);
+            display: inline-block;
+        }
+
+        .myButton:hover {
+            background: #000000;
+        }
+
+        .myButton:active {
+            background: #91E5D4;
+        }
+
+        /*trying to make button look cooler */
+        .colorButtonhtml {
+
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            line-height: 16px;
+            padding: 8px;
+            border-radius: 10px;
+            font-family: Georgia, serif;
+            font-weight: normal;
+            text-decoration: none;
+            font-style: normal;
+            font-variant: normal;
+            text-transform: none;
+            background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);
+            box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
+            border: 2px solid rgb(28, 110, 164);
+            display: inline-block;
+        }
+
+        .myButton:hover {
+            background: #1C6EA4;
+        }
+
+        .myButton:active {
+            background: #144E75;
+        }
+
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+
+        /* when the screen is less than 800px wide, the two columns stack on top of each other instead of next to  */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Welcome to My World</h1>
+        <p class= "underHeader">A blog webite by Dylan Atkins</p>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>SnowBoard Trip</h2>
+                <h5>A breathtaking image from an town I stayed in, in Colorado , Dec 7, 2017</h5>
+                <div class="fakeimg" style="display:cover;">
+                    <div class="townImage">
+                        <img src="http://media.bizj.us/view/img/4981421/telluride-colorado*1200xx600-338-0-56.jpg" />
+                    </div>
+                </div>
+                <p>Went out there for a week with my family.</p>
+                <p> So, not too long ago, probably a winter or two ago I went to Colorado. My dad, brothers and I went
+                    up there for a boys skii/snowboarding trip. It was my first time and it was absolutely beautiful.
+                    The mountains, people, places and I can't forget the snow, absolutely beautiful.</p>
+            </div>
+            <div class="card">
+                <h2>First day of JRS</h2>
+                <h5>Whats we learned on the 1st day, Oct 7th, 2019</h5>
+                <div class="fakeimg" style="display:cover;"><img
+                        src="http://siliconharbormag.com/wp-content/uploads/2017/04/JRS-Coding-School-logo.png" /></div>
+                <p>Here's a little of what we learned</p>
+                <p>We learned about mainly how a computer works. For example, how computers only work in bianary and
+                    make those 1's and 0's into coding we type and understand. Not only that, but we learned the basics
+                    of HTML and thats how im making this. One of the main things we learned is what a "tree" is which is
+                    a data structure. A tree consists of things such as: a root, parent, child, ancestor, descendant,
+                    height, leaf node and what a text node is.</p>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>A Little About Me</h2>
+                <div class="fakeimg" style="height:100px;"><img
+                        src="C:\Users\Lodging Source\Documents\images\about-pic.jpg" width="150px" height="145" alt="Me on top of a rock with my brothers and a beautiful background
+                    " /></div>
+                <br />
+                <br />
+                <br />
+                <p>Hey! My name is Dylan, I am 20 and im from South Carolina. I grew up in Charleston and have lived
+                    here my
+                    whole life. I went to USC for a couple years but decided it was not for me. So now i do computer
+                    programming classes in Charleston.</p>
+            </div>
+            <div class="card">
+                <h3>Popular Posts</h3>
+                <div class="fakeimg"><img
+                        src="https://www.migratingmiss.com/wp-content/uploads/2018/05/Beautiful-Places-in-the-Philippines.jpg"
+                        style="width:100%" />
+                    <div class="container">
+                        <h4>Philippines</h4>
+                    </div>
+                </div>
+                <br>
+                <div class="fakeimg">
+                    <img src="https://todiscoverrussia.com/wp-content/uploads/2016/09/Places-to-See-in-Russia-4.jpg"
+                        style="width: 100%" />
+                    <div class="container">
+                        <h4>Russia </h4>
+                    </div>
+                </div>
+                <br>
+                <div class="fakeimg">
+                    <img src="https://s4.scoopwhoop.com/wp-content/uploads/2014/03/yumthank-valley-sikkim.jpg"
+                        style="width:100%" />
+                    <div class="container">
+                        <h4>India</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+
+                <h3>Follow Me on Social Media</h3>
+                <div class="myButton">
+                    <div class="colorButtonhtml">
+
+                        <a href="https://www.instagram.com/dylat_/"><button>Social Media</button></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Come back next week for a new article!</h2>
+    </div>
+
+</body>
+
+</html>
